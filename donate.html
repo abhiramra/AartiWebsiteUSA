@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate | Aarti for Girls Inc. — Support a Girl Child</title>
+  <meta name="description" content="Support Aarti for Girls Inc. Your donation helps educate girls, empower women, and provide a safe, nurturing home for children in need.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<main class="page-tight">
+
+  <!-- HERO / INTRO -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="text-center mb-3">
+        <p class="sec-label">Donate</p>
+        <h1>Championing girls and women to shape their own lives</h1>
+      </div>
+      <div class="donate-intro">
+        <div>
+          <img src="assets/images/donate-hero.jpg" alt="A girl supported by Aarti for Girls" style="border-radius:var(--r-l);box-shadow:var(--sh-hov);width:100%;max-width:420px;aspect-ratio:3/4;object-fit:cover;">
+        </div>
+        <div style="min-width:0;">
+          <h2>Lend your support now</h2>
+          <p style="margin-top:.75rem;">As a registered nonprofit, donations and charitable contributions are vital to our work. Aarti for Girls Inc. is a 501(c)(3) organization (EIN&nbsp;# 47-3019649), and we ensure your contributions make a real difference in the lives of vulnerable children. Every gift helps provide a safe and nurturing environment for a child in need.</p>
+
+          <form id="donateForm" class="donate-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="firstName" autocomplete="given-name">
+              </div>
+              <div class="form-field">
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="lastName" autocomplete="family-name">
+              </div>
+            </div>
+
+            <label class="form-check">
+              <input type="checkbox" id="anon" name="anon">
+              <span>I prefer not to provide my personal information.</span>
+            </label>
+
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email">
+            </div>
+
+            <div class="form-row">
+              <div class="form-field" style="max-width:120px;">
+                <label for="code">Code</label>
+                <input type="text" id="code" name="code" placeholder="+1">
+              </div>
+              <div class="form-field">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
+            </div>
+
+            <fieldset class="form-field" style="border:none;padding:0;">
+              <legend style="font-weight:600;font-size:.85rem;margin-bottom:.5rem;">Donation amount (USD) <span style="color:var(--pink);">*</span></legend>
+              <div class="amt-chips">
+                <button type="button" class="amt-chip" data-amt="50">$50</button>
+                <button type="button" class="amt-chip" data-amt="100">$100</button>
+                <button type="button" class="amt-chip" data-amt="500">$500</button>
+                <button type="button" class="amt-chip" data-amt="1000">$1000</button>
+                <button type="button" class="amt-chip" data-amt="other">Other</button>
+              </div>
+              <input type="number" id="customAmount" name="customAmount" placeholder="Enter amount" min="1" style="margin-top:.6rem;">
+            </fieldset>
+
+            <div class="form-field">
+              <label for="payment">Preferred payment method <span style="color:var(--pink);">*</span></label>
+              <select id="payment" name="payment">
+                <option value="">Choose an option</option>
+                <option value="card">Credit / Debit card</option>
+                <option value="check">Check</option>
+                <option value="bank">Bank transfer</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-pink btn-lg" style="margin-top:.5rem;">Donate</button>
+
+            <p id="donateNote" class="form-note" hidden>Thanks for submitting! A member of our team will reach out to complete your donation. To give right away, please email <a href="mailto:preeti.nandanar@aartiforgirls.org">preeti.nandanar@aartiforgirls.org</a>.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAYS TO GIVE -->
+  <section class="section bg-teal-pale">
+    <div class="container">
+      <div class="text-center mb-3">
+        <p class="sec-label">Ways to Give</p>
+        <h2>Your generosity, their opportunity</h2>
+      </div>
+      <div class="donate-cards">
+        <div class="dc">
+          <div class="dc-icon">🍚</div>
+          <h3>Nourish a child</h3>
+          <p>Provide nutritious daily meals for the children living at Aarti Home.</p>
+        </div>
+        <div class="dc">
+          <div class="dc-icon">📚</div>
+          <h3>Fund an education</h3>
+          <p>Support tuition, books, and learning materials at Aarti School.</p>
+        </div>
+        <div class="dc">
+          <div class="dc-icon">💪</div>
+          <h3>Empower a woman</h3>
+          <p>Enable livelihood training so women can become financially independent.</p>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:1.75rem;color:var(--mid);">Aarti for Girls Inc. is a registered 501(c)(3) nonprofit. Contributions are tax-deductible to the extent allowed by law.</p>
+    </div>
+  </section>
+
+</main>
+<div id="footer-placeholder"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
